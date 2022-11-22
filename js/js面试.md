@@ -1,5 +1,5 @@
-# 1.延迟加载js的方式有哪些以及区别
-## 相同：script下载与HTML解析同时进行，相对于html解析来说都是异步的，区别在js的执行情况
+## 1.延迟加载js的方式有哪些以及区别
+### 相同：script下载与HTML解析同时进行，相对于html解析来说都是异步的，区别在js的执行情况
   1. defer：等HTML全部解析完才会执行js代码，顺次执行js脚本
   ```
   <script defer type= "./script" src='script.js'></script>
@@ -12,7 +12,7 @@
   ```
  [图文解析](https://blog.csdn.net/qq_41311259/article/details/120151261?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166908617916782414937502%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166908617916782414937502&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-120151261-null-null.142^v66^control,201^v3^control_2,213^v2^t3_esquery_v1&utm_term=async%20defer&spm=1018.2226.3001.4187)
  
-# 2. js数据类型有哪些：
+## 2. js数据类型有哪些：
   1. 基本类型：string，number，Boolean，undefined，null以及ES6新增的symbol，bignit
   2. 引用类型：object，date，array，RegExp
   3. 考题：
@@ -22,7 +22,7 @@
     //字符串和其他类型相加变成字符串形式
     alart(undefined+1);//NaN,是一个数值类型，但不是具体的数
     alart(typeof null);//object
-# 3. null和undefined区别
+## 3. null和undefined区别
   + 这两个基本数据类型分别都只有⼀个值，就是 undefined 和 null。
   + undefined 代表的含义是未定义，null 代表的含义是空对象。⼀般变量声明了但还没有定
   义的时候会返回 undefined,null 主要⽤于赋值给⼀些可能会返回对象的变量，作为初始
@@ -32,7 +32,7 @@
   + null转化数值为0，undefined转化数值为NaN
   + 当我们对两种类型使⽤ typeof 进⾏判断的时候，Null 类型化会返回 “object”，这是⼀个历史遗留的问题。当我们使⽤双等号对两种类型的值进⾏⽐较时会返回 true，使⽤三个等
 号时会返回 false。
-# 4. 为啥typeof(null)是object？
+## 4. 为啥typeof(null)是object？
   + 因为在JavaScript中，不同的对象都是使⽤⼆进制存储的，如果⼆进制前三位都是0的话，系统会判断为是Object类型，⽽null的⼆进制全是0，⾃然也就判断为
 Object。
     + 000 对象
@@ -40,7 +40,7 @@ Object。
     + 010 双精度类型
     + 100字符串
     + 110布尔类型
-# 5. =和==和===区别
+## 5. =和==和===区别
   + **它们最主要的区别在于 == 对⽐时，若类型不相等，会先转换为相同类型，然后再来⽐较值。⽽=== 则不会，只能在相同类型下⽐较值，不会做类型转换。还有⼀个是 =，这个是赋值，不是运算
 符。**
   + ===这个⽐较简单。下⾯的规则⽤来判断两个值是否===相等：
@@ -61,7 +61,7 @@ Object。
         先于 toString；例外的是 Date，Date利⽤的是toString转换。⾮ js 核⼼的对象，令说
         （⽐较麻烦，我也不⼤懂）
         任何其他组合，都不相等。
-# 6. 微任务和宏任务
+## 6. 微任务和宏任务
   + 
 
     
